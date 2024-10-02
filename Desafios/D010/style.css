@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+body {
+    background-color: #83e1ad;
+    margin: 0 auto;
+    position: relative;
+}
+main{
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 800px;
+    min-width: 400px;
+    margin: 0 auto;
+    padding: 15px;
+    position: relative;
+
+}
+ul{
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: inside;
+}
+
+#cabecalho {
+    background-image: linear-gradient(to bottom, #3DDC84, #2FA866, #063D1E);
+    color: #fff;
+    justify-content: space-between;
+    text-align: center;
+    font-family: "Bebas Neue", cursive;
+    padding: 10px;
+}
+
+
+header h1,h3{
+    font-weight: 100;
+    padding: 10px;
+    margin: 0px auto;
+    padding: 20px;
+    max-width: 800px;
+    min-width: 400px;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#cabecalho h3{
+    color: #ffffffbe;
+    margin-bottom: 30px;
+    text-shadow: 3px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#menu {
+    text-align: left;
+}
+
+#menu a{
+    color: #2FA866;
+    text-align: left;
+    text-decoration: none;
+    margin: 8px;
+    padding: 5px;
+}
+
+#menu a:hover{
+    background: #2FA866;
+    color: #063D1E;
+    border-radius: 5px;
+    transition: 0.3s linear;
+}
+
+#rodape {
+    background-color: #063D1E;
+    color: #2FA866;
+    text-align: center;
+    padding: 3px;
+}
+
+.artigo p{
+    text-indent: 15px;
+}
+.artigo a{
+    text-decoration: none;
+    color: #063D1E;
+    font-weight: bold;
+
+}
+.artigo h1{
+    font-family:idroid, sans-serif;
+    color: #063D1E;
+}
+
+.artigo h2{
+    font-family: idroid, sans-serif;
+    background-image: linear-gradient(to right, #c5ebd6, #fff);
+    color: #063D1E;
+    font-size: 17px;
+}
+
+.artigo picture{
+    position: relative;
+}
+
+.imagem{
+    text-align: center;
+}
+
+div.video{
+    position: relative;
+    background-color: #063D1E;
+    height: 0px;
+    margin: 0px -15px 15px -15px ; 
+    padding-bottom: 59%;
+}
+
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.tabela{
+    background-color: #c5ebd6;
+    border-radius: 10px;
+   
+}
+.tabela h4{
+    background-color: #2d925bbd;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+}
+.tabela p{
+    margin: 10px;
+    padding-bottom: 5px;
+}

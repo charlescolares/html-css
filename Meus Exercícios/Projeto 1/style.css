@@ -1,0 +1,170 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor1:#ecc19944;
+    --cor2:#CBDBA7;
+    --cor3:#789342;
+    --cor4:#76C1C3;
+    --cor5:#548D95;
+}
+
+body {
+    background-color: var(--cor1);
+    font-family: "Open Sans", sans-serif;
+}
+
+header {
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    font-weight: 400;
+    margin: auto;
+}
+
+header a {
+    margin: 30px;
+    padding: 6px;
+    text-decoration: none;
+    color: var(--cor3);
+    padding-bottom: 1px;
+    border-bottom: 2px solid #ecc19900;
+}
+
+header a:hover {
+    color: #7893429a;
+    transition: 0.s;
+    border-bottom: 2px solid var(--cor3);
+    font-size: 1.02em;
+    border-radius: 5px;
+    
+}
+
+nav > input {
+    position: absolute;
+    right: 100px;
+    border-radius: 10px;
+    height: 25px;
+    width: 200px;
+    text-indent: 10px;
+    font-weight: 300;
+    border: 1px var(--cor3) solid;
+    outline:none;
+    font-style: italic;
+}
+
+nav > img {
+    position: absolute;
+    right: 105px;
+    margin-top:2px;
+}
+
+nav > img:hover {
+    transition: 0.3s;
+    width :22px;
+    height: 22px;
+    cursor: pointer;
+}
+
+nav >img.carrinho {
+    position: absolute;
+    right: 50px;
+    bottom: 540px;
+    margin: auto;
+}
+
+nav >img.carrinho:hover {
+    width:32px;
+    height:32px;
+    transition: 0.3s;
+    cursor: pointer;
+    margin: auto;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+}
+
+main h1 {
+    font-family: "Dancing Script", cursive;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 5em;
+    font-weight: 100;
+    color: var(--cor3);
+    font-style: italic;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.438);
+}
+main > p {
+    font-family: "Dancing Script", cursive;
+    margin: auto;
+    text-align: center;
+    font-size: 2em;  
+    margin-top: 8px;
+    color: var(--cor3);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
+}
+
+section {
+    background-color: white;
+    margin:auto;
+    max-width: 900px;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: inline-block;
+    line-height: 2em;
+}
+
+section p {
+    margin: 20px;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+section h2{
+    text-align: left;
+    margin: 20px;
+    color: var(--cor5);
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    border-radius: 10px;
+    padding-left: 30px;
+}
+
+.container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.parag{
+    margin: 20px;
+    text-indent: 30px;
+}
+
+.parag > p {
+    margin: 0 0 10px;
+}
+
+section img{
+    width: 45%;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid var(--cor3);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.281);
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+    color: var(--cor4);
+}

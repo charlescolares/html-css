@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px geralmente = 1em
+            */
+            font-size: 1em;
+            font-style: italic;
+            text-decoration: underline;
+            /*lighter normal bold bolder */
+        }
+        
+        h1{
+            /*font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+
+            /*shorthand font
+            -font-style -> font-weight -> font-size -> font-family*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eligendi accusamus ipsum quae excepturi tempore hic incidunt soluta aliquam! Magni itaque fugit laboriosam consequuntur saepe esse vel commodi natus accusamus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae eos quibusdam odio, quidem aspernatur sunt suscipit possimus rem, exercitationem dolores facilis ratione atque natus qui debitis quis blanditiis, magni dolorem!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima mollitia natus id velit laudantium facere accusantium at nemo. Eveniet harum consequatur eaque ab voluptatibus dolorum cupiditate expedita hic voluptates rem!</p>
+    <h2>Subtítulo de exercício</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In ut sit voluptas, fuga quia accusamus dolorem illum voluptatem voluptatibus qui nemo eaque suscipit dolorum soluta numquam cum dignissimos alias. Quae? lo</p>
+</body>
+</html>
