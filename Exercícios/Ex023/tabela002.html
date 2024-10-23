@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,30 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px; 
+            background-color: gray;
+        }
+
+        tbody tr:nth-child(odd) { /* 2n-1*/
+            background-color: white;
+        }
+
+        tbody tr:nth-child(even) { /* 2n*/
+            background-color: lightgrey;
         }
 
         .num {
@@ -35,6 +57,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR, TD ,TH
             TBODY
@@ -44,10 +67,11 @@
     -->
 
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -95,9 +119,24 @@
         </tbody>
 
         <tfoot>
-            <th>Total de habitantes</th>
+            <th  scope="row">Total de habitantes</th>
             <td class="num"><strong>157.916.092</strong></td>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis ipsam ea non earum! Ducimus blanditiis aut nemo iure dolorem qui mollitia dignissimos, labore, maxime exercitationem dolor eum incidunt eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit beatae iusto nemo, accusantium quibusdam temporibus blanditiis hic magnam provident soluta? Quo dolores itaque voluptatem eaque sunt maxime eveniet, in culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laborum dicta minima laboriosam earum mollitia veniam deserunt voluptates! Iste tempora dolorum consequatur omnis consectetur totam repellendus veniam repellat minima error!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis ipsam ea non earum! Ducimus blanditiis aut nemo iure dolorem qui mollitia dignissimos, labore, maxime exercitationem dolor eum incidunt eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit beatae iusto nemo, accusantium quibusdam temporibus blanditiis hic magnam provident soluta? Quo dolores itaque voluptatem eaque sunt maxime eveniet, in culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laborum dicta minima laboriosam earum mollitia veniam deserunt voluptates! Iste tempora dolorum consequatur omnis consectetur totam repellendus veniam repellat minima error!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis ipsam ea non earum! Ducimus blanditiis aut nemo iure dolorem qui mollitia dignissimos, labore, maxime exercitationem dolor eum incidunt eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit beatae iusto nemo, accusantium quibusdam temporibus blanditiis hic magnam provident soluta? Quo dolores itaque voluptatem eaque sunt maxime eveniet, in culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laborum dicta minima laboriosam earum mollitia veniam deserunt voluptates! Iste tempora dolorum consequatur omnis consectetur totam repellendus veniam repellat minima error!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis ipsam ea non earum! Ducimus blanditiis aut nemo iure dolorem qui mollitia dignissimos, labore, maxime exercitationem dolor eum incidunt eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit beatae iusto nemo, accusantium quibusdam temporibus blanditiis hic magnam provident soluta? Quo dolores itaque voluptatem eaque sunt maxime eveniet, in culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laborum dicta minima laboriosam earum mollitia veniam deserunt voluptates! Iste tempora dolorum consequatur omnis consectetur totam repellendus veniam repellat minima error!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis ipsam ea non earum! Ducimus blanditiis aut nemo iure dolorem qui mollitia dignissimos, labore, maxime exercitationem dolor eum incidunt eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit beatae iusto nemo, accusantium quibusdam temporibus blanditiis hic magnam provident soluta? Quo dolores itaque voluptatem eaque sunt maxime eveniet, in culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laborum dicta minima laboriosam earum mollitia veniam deserunt voluptates! Iste tempora dolorum consequatur omnis consectetur totam repellendus veniam repellat minima error!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis ipsam ea non earum! Ducimus blanditiis aut nemo iure dolorem qui mollitia dignissimos, labore, maxime exercitationem dolor eum incidunt eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit beatae iusto nemo, accusantium quibusdam temporibus blanditiis hic magnam provident soluta? Quo dolores itaque voluptatem eaque sunt maxime eveniet, in culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laborum dicta minima laboriosam earum mollitia veniam deserunt voluptates! Iste tempora dolorum consequatur omnis consectetur totam repellendus veniam repellat minima error!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis ipsam ea non earum! Ducimus blanditiis aut nemo iure dolorem qui mollitia dignissimos, labore, maxime exercitationem dolor eum incidunt eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit beatae iusto nemo, accusantium quibusdam temporibus blanditiis hic magnam provident soluta? Quo dolores itaque voluptatem eaque sunt maxime eveniet, in culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laborum dicta minima laboriosam earum mollitia veniam deserunt voluptates! Iste tempora dolorum consequatur omnis consectetur totam repellendus veniam repellat minima error!</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel officiis ipsam ea non earum! Ducimus blanditiis aut nemo iure dolorem qui mollitia dignissimos, labore, maxime exercitationem dolor eum incidunt eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit beatae iusto nemo, accusantium quibusdam temporibus blanditiis hic magnam provident soluta? Quo dolores itaque voluptatem eaque sunt maxime eveniet, in culpa! Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laborum dicta minima laboriosam earum mollitia veniam deserunt voluptates! Iste tempora dolorum consequatur omnis consectetur totam repellendus veniam repellat minima error!</p>
 </body>
 </html>
