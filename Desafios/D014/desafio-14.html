@@ -14,12 +14,6 @@
             width: 500px;
         }
 
-        thead {
-            background-color: gray;
-            color: white;
-        }
-    
-
         td,th {
             border: 1px solid black;
             padding: 10px;
@@ -29,9 +23,12 @@
             text-align: center;
         }
 
-        #media {
+        .inverso {
             background-color: gray;
             color: white;
+        }
+       
+        .esquerda {
             text-align: left;
         }
 
@@ -40,13 +37,13 @@
 <body>
     <table>
         <thead>
-            <tr>
+            <tr class="inverso">
                 <th rowspan="2" scope="col">Área</th>
                 <th rowspan="2" scope="col">Disiciplinas</th>
                 <th colspan="2" scope="colgroup">Notas</th>
                 <th rowspan="2" scope="col">Média</th>
             </tr>
-            <tr>
+            <tr class="inverso">
                 <th>Nota1</th>
                 <th>Nota2</th>
             </tr>
@@ -81,8 +78,8 @@
                 <td class="num">0.0</td>
             </tr>
             
-            <tr>
-                <th colspan="4" scope="row" id="media">Média de Exatas</th>
+            <tr class="inverso">
+                <th colspan="4" scope="row" class="esquerda">Média de Exatas</th>
                 <td class="num" id="media">0.0</td>
             </tr>
             
@@ -101,8 +98,8 @@
                 <td class="num">0.0</td>
             </tr>
             
-            <tr>
-                <th colspan="4" scope="row" id="media">Média de Humanas</th>
+            <tr class="inverso">
+                <th colspan="4" scope="row" class="esquerda">Média de Humanas</th>
                 <td class="num" id="media">0.0</td>
             </tr>
 
